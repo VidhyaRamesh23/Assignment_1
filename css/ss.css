@@ -1,0 +1,33 @@
+<style>
+.textoverimage
+{
+position:relative;
+width:200px;
+height:200px;
+float:right;
+transition:0.5 s;
+}
+.textoverimage:hover
+{
+background:110%;
+}
+.textoverimage:after
+{
+position:aboslute;
+top:90;
+bottom:0;
+left:0;
+right:0;
+white-space:pre-wrap;
+background-color:rgba(0,0,0,3);
+color:#fff;
+padding:0 8 px;
+transition:0.5s;
+content:attr(data-text);
+}
+.textoverimage:hover:after
+{
+opacity:1;
+top:0;
+padding:8px;
+}
